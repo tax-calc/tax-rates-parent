@@ -5,10 +5,6 @@ import java.io.Serializable;
 
 @Entity
 public class IncomeTaxRate implements Serializable, Comparable<IncomeTaxRate> {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
     @Column
     private int yearOfAssignment;
 
@@ -28,14 +24,6 @@ public class IncomeTaxRate implements Serializable, Comparable<IncomeTaxRate> {
     private Double percentage;
 
     public IncomeTaxRate() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public int getYearOfAssignment() {

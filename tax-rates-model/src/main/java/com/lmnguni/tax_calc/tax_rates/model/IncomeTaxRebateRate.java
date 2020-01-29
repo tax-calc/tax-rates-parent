@@ -5,9 +5,6 @@ import java.io.Serializable;
 
 @Entity
 public class IncomeTaxRebateRate implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
 
     @Column
     private int yearOfAssessment;
@@ -22,14 +19,6 @@ public class IncomeTaxRebateRate implements Serializable {
     private Double rebateAmount;
 
     public IncomeTaxRebateRate() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public int getYearOfAssessment() {

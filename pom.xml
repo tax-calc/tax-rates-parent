@@ -18,7 +18,6 @@
     <name>tax-rates-parent</name>
 
     <modules>
-
         <module>tax-rates-services</module>
         <module>tax-rates-repository</module>
         <module>tax-rates-web</module>

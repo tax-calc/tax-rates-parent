@@ -4,11 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-public class MedicalCreditRate implements Serializable {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+public class MedicalCreditRate extends BaseEntity implements Serializable {
 
     @Column
     private int yearOfAssessment;
@@ -23,14 +19,6 @@ public class MedicalCreditRate implements Serializable {
     private double additionalDependentRebate;
 
     public MedicalCreditRate() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public int getYearOfAssessment() {
